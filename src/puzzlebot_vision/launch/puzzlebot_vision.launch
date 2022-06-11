@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+    <!-- Load the parameters defined in the puzzlebot_vision configuration file to the parameter server -->
+    <!--<rosparam command="load" file="$(find puzzlebot_vision)/config/puzzlebot_vision.yaml"/> -->
+
+    <!-- Run the created puzzlebot_vision node that will process the camera Image messages -->
+    <node name="puzzlebot_signal_detector" pkg="puzzlebot_vision" type="puzzlebot_traffic_signals.py"/>
+    <node name="image_view_debug" pkg="rqt_image_view" type="rqt_image_view"/>
+    <node name="puzzlebot_predictions" pkg="puzzlebot_vision" type="puzzlebot_predictions.py" output="screen"/>
+
+</launch>

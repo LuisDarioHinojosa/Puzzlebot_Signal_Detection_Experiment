@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/luis/Documents/Arquitectura_Puzzlebot_Vision/devel -DCMAKE_INSTALL_PREFIX=/home/luis/Documents/Arquitectura_Puzzlebot_Vision/install -G Unix Makefiles
